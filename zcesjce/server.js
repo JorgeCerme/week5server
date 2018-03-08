@@ -14,10 +14,3 @@ console.log('test.html requested');
 // note that __dirname gives the path to the server.js file
 res.sendFile(__dirname + '/test.html');
 });
-app.get('/:fileName', function (req, res) {
- // run some server-side code
- var fileName = req.params.fileName;
-console.log(fileName + ' requested');
-// note that __dirname gives the path to the server.js file
-res.sendFile(__dirname + '/'+ fileName);
-});
